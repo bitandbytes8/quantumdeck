@@ -10,6 +10,7 @@
     background-color: #0d0d0d;
     transition: top 0.5s cubic-bezier(0.4, 1, 0.4, 1);
 }
+
 .qd__navbar.qd__hide_navbar {
     top: -6rem;
 }
