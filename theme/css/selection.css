@@ -1,0 +1,14 @@
+body::selection{ background-color: transparent;}
+img::selection{ background-color: transparent;}
+h1::selection{background-color: transparent;color: #FE5D38;}
+h2::selection{background-color: transparent;color: #FE5D38;}
+h3::selection{background-color: transparent;color: #FE5D38;}
+h4::selection{background-color: transparent;color: #FE5D38;}
+h5::selection{background-color: transparent;color: #FE5D38;}
+h6::selection{background-color: transparent;color: #FE5D38;}
+a::selection{background-color: transparent;color: #FE5D38;}
+p::selection{background-color: transparent;color: #FE5D38;}
+br::selection{background-color: transparent;color: #FE5D38;}
+span::selection{background-color: transparent;color: #FE5D38;}
+div::selection{background-color: transparent;color: #FE5D38;}
+div *::selection{background-color: transparent;color: #FE5D38;}

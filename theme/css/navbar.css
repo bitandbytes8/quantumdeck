@@ -1,0 +1,188 @@
+.qd__navbar
+{
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background-color: #0d0d0d;
+    transition: top 0.5s cubic-bezier(0.4, 1, 0.4, 1);
+}
+.qd__navbar.qd__hide_navbar {
+    top: -6rem;
+}
+
+.qd__navbar.qd__fix_element {
+    top: 0 !important;
+}
+.qd__nav_containers
+{
+    position: absolute;
+    width: 24.5rem;
+    height: 6rem;
+    right: 6rem;
+    top: 0;
+}
+.qd__nav_links
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9;
+}
+.qd__nav_link
+{
+    cursor: pointer;
+}
+.qd__nav_link a
+{
+    display: block;
+    color: #f5f5f5;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    line-height: 6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.qd__menu_nav
+{
+    position: fixed;
+    width: 380px;
+    height: 6rem;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #050505;
+    transform: translateX(380px);
+    transition: transform 0.6s 0.1s cubic-bezier(0.3, 1, 0.3, 1);
+    z-index: 999999;
+}
+.qd__menu_nav .qd__menu_nav_show
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.qd__logo_container
+{
+    position: fixed;
+    width: 8.125rem;
+    height: 6rem;
+    left: 2rem;
+    top: 0;
+    transition: top 0.5s cubic-bezier(0.4, 1, 0.4, 1);
+    z-index: 99999999999999999;
+}
+.qd__logo_container a
+{
+    display: block;
+    color: #f5f5f5;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.qd__logo_container.qd__hide_navbar {
+    top: -6rem;
+}
+
+.qd__logo_container.qd__fix_element {
+    top: 0 !important;
+}
+.qd__logo
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f5f5f5;
+    transition: 0.2s;
+}
+.qd__logo svg
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.qd__menu
+{
+    position: fixed;
+    width: 2rem;
+    height: 6rem;
+    top: 0;
+    right: 2rem;
+    cursor: pointer;
+    transition: top 0.5s cubic-bezier(0.4, 1, 0.4, 1);
+    z-index: 99999999999999999;
+}
+.qd__menu.qd__hide_navbar {
+    top: -6rem;
+}
+.qd__menu.qd__fix_element {
+    top: 0 !important;
+}
+.qd__menu_bars
+{
+    position: absolute;
+    width: 2rem;
+    height: 0.875rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.qd__bar_top
+{
+    position: absolute;
+    width: 2rem;
+    height: 0.125rem;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    transition: top 0.3s 0.1s cubic-bezier(0.3, 1, 0.3, 1), transform 0.3s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.qd__bar_top.qd__bar_down 
+{
+    top: 6px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: top 0.3s cubic-bezier(0.3, 1, 0.3, 1), transform 0.3s 0.1s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.qd__bar_bottom 
+{
+    position: absolute;
+    width: 2rem;
+    height: 0.125rem;
+    bottom: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    transition: bottom 0.3s 0.1s cubic-bezier(0.3, 1, 0.3, 1), transform 0.3s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.qd__bar_bottom.qd__bar_up {
+    bottom: 6px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: bottom 0.3s cubic-bezier(0.3, 1, 0.3, 1), transform 0.3s 0.1s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.qd__menu_overlay
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-color: rgba(13, 1, 13, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: none;
+}
